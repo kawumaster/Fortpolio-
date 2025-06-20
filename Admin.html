@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { background-color: #f8f9fa; }
+    .sidebar {
+      background-color: #343a40; color: #fff; padding: 20px; height: 100vh;
+    }
+    .sidebar a {
+      color: #adb5bd; display: block; padding: 10px 0; text-decoration: none;
+    }
+    .sidebar a:hover { color: #fff; }
+    .dashboard-content { padding: 30px; }
+    .card { margin-bottom: 20px; }
+    @media (max-width: 768px) {
+      .sidebar { height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Admin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row flex-md-nowrap">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+        <div class="position-sticky pt-3">
+          <h4 class="text-white px-3">Admin Panel</h4>
+          <ul class="nav flex-column px-3">
+            <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Messages</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 dashboard-content">
+        <h2>Welcome Admin</h2>
+        <p class="text-muted">Manage your portfolio data here.</p>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <div class="card border-primary">
+              <div class="card-body">
+                <h5 class="card-title">Total Projects</h5>
+                <p class="card-text">2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card border-success">
+              <div class="card-body">
+                <h5 class="card-title">Messages</h5>
+                <p class="card-text">10+</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card border-info">
+              <div class="card-body">
+                <h5 class="card-title">Active Users</h5>
+                <p class="card-text">1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+￼Enter
